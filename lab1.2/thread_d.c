@@ -24,8 +24,6 @@ int main(void) {
         }
 
         printf("main: created thread #%d\n", i);
-
-        sleep(15);
     }
 
     return 0;
