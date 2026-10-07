@@ -9,7 +9,6 @@ void *worker(void *arg) {
 
     while (1) {
         counter++;
-        // Решение проблемы: явная проверка флага отмены в TCB
         // pthread_testcancel();
     }
 

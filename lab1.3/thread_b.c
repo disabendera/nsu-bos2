@@ -12,9 +12,9 @@ struct task {
 };
 
 void *worker(void *arg) {
-    struct task *t = (struct task *)arg;
+    struct task *t = arg;
     printf("worker: value=%d text=%s\n", t->value, t->text);
-    free();
+    free(t);
     return NULL;
 }
 
